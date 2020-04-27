@@ -11,7 +11,7 @@ echo "| Version : Premium X pertalite      |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 
-// function change()
+// function change(){
 function request($url, $data = null, $headers = null, $put = null)
 {
 	$ch = curl_init();
