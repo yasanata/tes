@@ -2,15 +2,16 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," ===========================\n");
-echo color("red","| Claim Bonstri|\n");
-echo color("red","| Auto Claim sesuai keinginan |\n");
-echo color("red","| Cek Bonstri dulu |\n");
-echo color("red","| Minimal 150 Bonstri|\n");
-echo color("red","| Coba Claim dulu sebelum DOR          |\n");
-echo "| Version : Free      |\n";
+echo color("red","| Claim Voucher Gojek|\n");
+echo color("red","| Auto create Gojek X Redeem voucher |\n");
+echo color("red","| github: kumpulanremaja |\n");
+echo color("red","| fanspage :4kumpulanremaja|\n");
+echo color("red","| Creator : kumpulanremaja.com          |\n");
+echo "| Version : Premium X pertalite      |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 
+// function change()
 function request($url, $data = null, $headers = null, $put = null)
 {
 	$ch = curl_init();
