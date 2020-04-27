@@ -22,17 +22,6 @@ function getstr($str, $exp1, $exp2)
 	$a = explode($exp1, $str)[1];
 	return explode($exp2, $a)[0];
 }
-date_default_timezone_set('Asia/Jakarta');
-include "function.php";
-echo color("red"," ===========================\n");
-echo color("red","| Claim Voucher Gojek|\n");
-echo color("red","| Auto create Gojek X Redeem voucher |\n");
-echo color("red","| github: kumpulanremaja |\n");
-echo color("red","| fanspage :4kumpulanremaja|\n");
-echo color("red","| Creator : kumpulanremaja.com          |\n");
-echo "| Version : Premium X pertalite      |\n";
-echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
-echo " ===========================\n";
 echo "NO HP pasien: ";
 $nohp = trim(fgets(STDIN));
 $url = "http://bonstri.tri.co.id/api/v1/login/request-otp";
