@@ -22,7 +22,7 @@ function getstr($str, $exp1, $exp2)
 	$a = explode($exp1, $str)[1];
 	return explode($exp2, $a)[0];
 }
-echo "NO HP: ";
+echo "NO HP pasien: ";
 $nohp = trim(fgets(STDIN));
 $url = "http://bonstri.tri.co.id/api/v1/login/request-otp";
 $data = "{\"msisdn\":\"$nohp\"}";
@@ -83,7 +83,7 @@ $gettrx = request($url, $data, $headers);
 $trxid = getstr($gettrx, 'GB 1 Hari (Jam 01:00 - 12:00)","rewardTransactionId":"','"');
 
 tembak:
-echo "[?] Tembak Berapa : ";
+echo "[?] Tembak Berapa boz : ";
 $loop = trim(fgets(STDIN));
 for ($x = 0; $x < $loop; $x++) {
 $rand = substr(str_shuffle(str_repeat('0123456789', mt_rand(1,3))), 1, 3);
@@ -104,10 +104,10 @@ $headers[] = "Connection: close";
 $exec = request($url, $data, $headers);
 if(strpos($exec, '"data":"Success"') !== false)
 {
-	echo "Success Tembak!\n";
+	echo "Tembak berhasil boz!\n";
 }
 else
 {
-	echo "Failed Tembak!";
+	echo "Tembak Gagal boz!";
 }
 }
